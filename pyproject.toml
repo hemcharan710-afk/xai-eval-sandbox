@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xai_eval"
+version = "0.1.0"
+description = "A stress-testing framework for evaluating XAI explanation divergence."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "shap",
+    "lime",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
